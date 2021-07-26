@@ -1,0 +1,72 @@
+.product__rating {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.filters--vertical .product__rating {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.product__rating[percent="10"]::before {
+  width: 10%;
+}
+
+.product__rating[percent="20"]::before {
+  width: 20%;
+}
+
+.product__rating[percent="30"]::before {
+  width: 30%;
+}
+
+.product__rating[percent="40"]::before {
+	width: 40%;
+}
+
+.product__rating[percent="50"]::before {
+	width: 50%;
+}
+
+.product__rating[percent="60"]::before {
+	width: 60%;
+}
+
+.product__rating[percent="70"]::before {
+	width: 70%;
+}
+
+.product__rating[percent="80"]::before {
+	width: 80%;
+}
+
+.product__rating[percent="90"]::before {
+	width: 90%;
+}
+
+.product__rating[percent="100"]::before {
+	width: 100%;
+}
+
+.product__rating::before {
+  content:"★★★★★";
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  color: black;
+}
+
+.product__rating--gold::before{
+  color: var(--c-gold);
+}
+
+.product__rating::after {
+	content: "☆☆☆☆☆";
+	position: relative;
+	top: 0px;
+	color: gray;
+}

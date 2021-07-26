@@ -1,0 +1,42 @@
+/*footer*/
+.footer__nav {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav--col {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__nav--col h4 {
+  margin-bottom: 10px;
+}
+
+.footer__nav--col li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.footer__product-tags {
+  height: 70px;
+  margin: 20px 0;
+}
+
+.footer__product-tags a {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: var(--c-primary);
+  background-color: var(--c-black50);
+}
+
+.footer__product-tags a:hover {
+  color: var(--c-secondary);
+}
+
+.footer__product-tags a:not(:last-of-type) {
+  margin-right: 15px;
+}

@@ -1,0 +1,126 @@
+header {
+  padding-bottom: 15px;
+}
+
+/*top panel of header*/
+.header__nav {
+  border-bottom: 1px solid var(--c-black60);
+}
+
+.header__nav,
+.header__nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav ul {
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+.header__nav ul li:not(:last-child) {
+  margin-right: 38px;
+}
+
+/*main part of header*/
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+header img.brand {
+  object-fit: contain;
+  width: 175px;
+  height: 42px;
+}
+
+.user>button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.user__account {
+  background-image: url(user.svg);
+  background-size: 20px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.user__basket {
+  background-image: url(basket.svg);
+  background-size: 20px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.search-bar {
+  width: 450px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--c-black30);
+}
+
+.search-bar .dropdown {
+  position: absolute;
+  width: 170px;
+  max-width: 170px;
+  user-select: none;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.search-bar .dropdown .dropdown__options {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-radius: 0 0 16px 16px;
+  background-color: var(--c-black60);
+  pointer-events: none;
+}
+
+.open .dropdown__options {
+  display: block;
+}
+
+.dropdown__options a {
+  display: block;
+  padding: 10px 15px 10px 15px;
+}
+
+.dropdown__options a:hover,
+.dropdown__options a:focus {
+  background-color: var(--c-black40);
+}
+
+.dropdown__selected {
+  padding: 10px 20px;
+  background-image: url(shevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.dropdown__selected::before {
+  position: absolute;
+  top: calc((100% - 24px) /2);
+  right: 0;
+  content: '';
+  width: 1px;
+  height: 24px;
+  background-color: var(--c-black30);
+}
+
+input.search {
+  width: 100%;
+  height: 100%;
+  padding-left: 190px;
+  background-image: url(search.svg);
+  background-size: 20px;
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
