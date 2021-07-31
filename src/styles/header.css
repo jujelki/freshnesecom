@@ -36,32 +36,64 @@ header img.brand {
   height: 42px;
 }
 
-.user>button {
+/*buttons of cart and account*/
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user__btn {
   width: 20px;
   height: 20px;
   border: none;
   background-color: transparent;
 }
 
-.user__account {
+.btn--account {
+  margin-right: 15px;
   background-image: url(user.svg);
   background-size: 20px;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.user__basket {
+.btn--basket {
+  position: relative;
   background-image: url(basket.svg);
   background-size: 20px;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
+.btn--basket span {
+  position: absolute;
+  top: 12px;
+  left: -2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  font-size: 10px;
+  background-color: var(--c-copper20);
+  color: var(--c-white);
+}
+
+/*search input*/
 .search-bar {
   width: 450px;
   height: 42px;
   border-radius: 12px;
   border: 1px solid var(--c-black30);
+}
+
+.search-bar input.search {
+  width: 100%;
+  height: 100%;
+  padding-left: 190px;
+  background-image: url(search.svg);
+  background-size: 20px;
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
 }
 
 .search-bar .dropdown {
@@ -112,15 +144,4 @@ header img.brand {
   width: 1px;
   height: 24px;
   background-color: var(--c-black30);
-}
-
-.search-bar input.search {
-  width: 100%;
-  height: 100%;
-  padding-left: 190px;
-  background-image: url(search.svg);
-  background-size: 20px;
-  background-position: 98% 50%;
-  background-repeat: no-repeat;
-  border: 1px solid transparent;
 }
