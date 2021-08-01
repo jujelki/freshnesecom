@@ -63,7 +63,7 @@
 
 /*products*/
 .products {
-  grid-column: 2 / 5 !important;
+  grid-column: 2 / 5;
 }
 
 .products--compact {
