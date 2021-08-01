@@ -96,7 +96,7 @@ header img.brand {
   border: 1px solid transparent;
 }
 
-.search-bar .dropdown {
+.search-dropdown {
   position: absolute;
   width: 170px;
   max-width: 170px;
@@ -105,38 +105,42 @@ header img.brand {
   font-size: 15px;
 }
 
-.search-bar .dropdown .dropdown__options {
-  display: none;
-  padding: 0;
+.search-dropdown__list {
+  list-style: none;
   margin: 0;
-  list-style-type: none;
+  padding-left: 0;
+  z-index: 2;
+}
+
+.search-dropdown__options {
+  display: none;
   border-radius: 0 0 16px 16px;
   background-color: var(--c-black60);
   pointer-events: none;
 }
 
-.open .dropdown__options {
+.open .search-dropdown__options {
   display: block;
 }
 
-.dropdown__options a {
+.search-dropdown__options a {
   display: block;
   padding: 10px 15px 10px 15px;
 }
 
-.dropdown__options a:hover,
-.dropdown__options a:focus {
+.search-dropdown__options a:hover,
+.search-dropdown__options a:focus {
   background-color: var(--c-black40);
 }
 
-.dropdown__selected {
+.search-dropdown__selected {
   padding: 10px 20px;
   background-image: url(shevron-down.svg);
   background-repeat: no-repeat;
   background-position: 90% 50%;
 }
 
-.dropdown__selected::before {
+.search-dropdown__selected::before {
   position: absolute;
   top: calc((100% - 24px) /2);
   right: 0;
