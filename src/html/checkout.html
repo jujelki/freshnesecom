@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <title>Checkout</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__nav header-nav">
+        <ul class="nav__col">
+          <li><a href="#">Chat with us</a></li>
+          <li>+420 336 775 664</li>
+          <li>info@freshnesecom.com</li>
+        </ul>
+        <ul class="nav__col">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="header__main">
+        <img class="brand" src="Freshnesecom.svg" alt="">
+        <div class="search-bar">
+          <div class="search-bar__dropdown search-dropdown">
+            <div class="search-dropdown__selected">
+              <div class="old-text">All categories</div>
+              <div class="new-text" data-text="category"></div>
+            </div>
+            <div class="search-dropdown__options">
+              <ul class="search-dropdown__list">
+                <li class="search-dropdown__item search-dropdown__item--selected">
+                  <a href="#">All categories</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Bakery</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Fruit and vegetables</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Meat and fish</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Drinks</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Kitchen</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Special nutrition</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Baby</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Pharmacy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <input type="search" class="search" placeholder="Search Products, categories ...">
+        </div>
+        <div class="user">
+          <button class="user__btn btn--account"></button>
+          <button class="user__btn btn--basket">
+            <span>5</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="menu container">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#">Bakery</a></li>
+      <li class="menu__item"><a href="#">Fruit and vegetables</a></li>
+      <li class="menu__item"><a href="#">Meat and Fish</a></li>
+      <li class="menu__item"><a href="#">Drinks</a></li>
+      <li class="menu__item"><a href="#">Kitchen</a></li>
+      <li class="menu__item"><a href="#">Special nutrition</a></li>
+      <li class="menu__item"><a href="#">Baby</a></li>
+      <li class="menu__item"><a href="#">Pharmacy</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Fruits and vegetables</a></li>
+      <li><a href="#">Carrots from Tommissy Farm</a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="container">
+      <div class="row-12">
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <p class="order-summary__warning">Price can change depending on shipping method and taxes of your state.</p>
+          <ul class="order-summary__list">
+            <li class="order-summary__item purchase-item">
+              <div class="purchase-item__aside">
+                <img class="purchase-item__image" src="pomegranate.jpg" alt="">
+                <div class="purchase-item__buttons">
+                  <button class="btn btn--icon-copper btn--wishlist">
+                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13062 2.26001C9.76714 1.62349 10.6304 1.2659 11.5306 1.2659C12.4308 1.2659 13.2941 1.62349 13.9306 2.26001C14.5671 2.89653 14.9247 3.75984 14.9247 4.66001C14.9247 5.56019 14.5671 6.42349 13.9306 7.06001L13.0573 7.93334L8.25729 12.7333L3.45729 7.93334L2.58396 7.06001C1.94744 6.42349 1.58984 5.56019 1.58984 4.66001C1.58984 3.75984 1.94744 2.89653 2.58396 2.26001C3.22048 1.62349 4.08378 1.2659 4.98396 1.2659C5.88413 1.2659 6.74744 1.62349 7.38396 2.26001L8.25729 3.13334L9.13062 2.26001Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Wishlist
+                  </button>
+                  <button class="btn btn--icon-copper">
+                    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.16211 1.83331H2.49544C1.75906 1.83331 1.16211 2.43027 1.16211 
+                      3.16665V5.83331C1.16211 6.56969 1.75906 7.16665 2.49544 7.16665H5.16211C5.89849 
+                      7.16665 6.49544 6.56969 6.49544 5.83331V3.16665C6.49544 2.43027 
+                      5.89849 1.83331 5.16211 1.83331Z" stroke-width="2" stroke-linecap="round" 
+                      stroke-linejoin="round"/>
+                      <path d="M5.16211 9.83331H2.49544C1.75906 9.83331 1.16211 10.4303 1.16211 
+                      11.1666V13.8333C1.16211 14.5697 1.75906 15.1666 2.49544 15.1666H5.16211C5.89849 
+                      15.1666 6.49544 14.5697 6.49544 13.8333V11.1666C6.49544 10.4303 5.89849 9.83331 
+                      5.16211 9.83331Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12.4961 11.1665H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.1628 13.8333H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.1628 5.83331H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12.4961 3.16647H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    Compare            
+                  </button>
+                  <button class="btn btn--icon-black">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.18031 7.17999L0.820312 0.819992" stroke="#151515" stroke-width="1" stroke-linecap="round" stroke-linejoin="bevel"/>
+                      <path d="M7.18031 0.819992L0.820312 7.17999" stroke="#151515" stroke-width="1" stroke-linecap="round" stroke-linejoin="bevel"/>
+                      </svg>
+                    Delete                    
+                  </button>
+                </div>
+              </div>
+              <div class="purchase-item__info">
+                <h3 class="purchase-item__name">Product Title</h3>
+                <table class="purchase-item__specs">
+                  <tr>
+                    <td>Farm:</td>
+                    <td>Tharamis Farm</td>
+                  </tr>
+                  <tr>
+                    <td>Freshness:</td>
+                    <td>1 day</td>
+                  </tr>
+                </table>
+                <div class="purchase-item__pricing">
+                  <p class="purchase-item__price lead">12.99 USD</p>
+                  <p class="purchase-item__price--old elemental">15.99 USD</p>
+                </div>    
+              </div>
+            </li>
+            <li class="order-summary__item purchase-item">
+              <div class="purchase-item__aside">
+                <img class="purchase-item__image" src="chicken.jpg" alt="">
+                <div class="purchase-item__buttons">
+                  <button class="btn btn--icon-copper btn--wishlist">
+                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13062 2.26001C9.76714 1.62349 10.6304 1.2659 11.5306 1.2659C12.4308 1.2659 13.2941 1.62349 13.9306 2.26001C14.5671 2.89653 14.9247 3.75984 14.9247 4.66001C14.9247 5.56019 14.5671 6.42349 13.9306 7.06001L13.0573 7.93334L8.25729 12.7333L3.45729 7.93334L2.58396 7.06001C1.94744 6.42349 1.58984 5.56019 1.58984 4.66001C1.58984 3.75984 1.94744 2.89653 2.58396 2.26001C3.22048 1.62349 4.08378 1.2659 4.98396 1.2659C5.88413 1.2659 6.74744 1.62349 7.38396 2.26001L8.25729 3.13334L9.13062 2.26001Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Wishlist
+                  </button>
+                  <button class="btn btn--icon-copper">
+                    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.16211 1.83331H2.49544C1.75906 1.83331 1.16211 2.43027 1.16211 
+                      3.16665V5.83331C1.16211 6.56969 1.75906 7.16665 2.49544 7.16665H5.16211C5.89849 
+                      7.16665 6.49544 6.56969 6.49544 5.83331V3.16665C6.49544 2.43027 
+                      5.89849 1.83331 5.16211 1.83331Z" stroke-width="2" stroke-linecap="round" 
+                      stroke-linejoin="round"/>
+                      <path d="M5.16211 9.83331H2.49544C1.75906 9.83331 1.16211 10.4303 1.16211 
+                      11.1666V13.8333C1.16211 14.5697 1.75906 15.1666 2.49544 15.1666H5.16211C5.89849 
+                      15.1666 6.49544 14.5697 6.49544 13.8333V11.1666C6.49544 10.4303 5.89849 9.83331 
+                      5.16211 9.83331Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12.4961 11.1665H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.1628 13.8333H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.1628 5.83331H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12.4961 3.16647H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    Compare            
+                  </button>
+                  <button class="btn btn--icon-black">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.18031 7.17999L0.820312 0.819992" stroke="#151515" stroke-width="1" stroke-linecap="round" stroke-linejoin="bevel"/>
+                      <path d="M7.18031 0.819992L0.820312 7.17999" stroke="#151515" stroke-width="1" stroke-linecap="round" stroke-linejoin="bevel"/>
+                      </svg>
+                    Delete                    
+                  </button>
+                </div>
+              </div>
+              <div class="purchase-item__info">
+                <h3 class="purchase-item__name">Product Title</h3>
+                <table class="purchase-item__specs">
+                  <tr>
+                    <td>Farm:</td>
+                    <td>Tharamis Farm</td>
+                  </tr>
+                  <tr>
+                    <td>Freshness:</td>
+                    <td>1 day</td>
+                  </tr>
+                </table>
+                <div class="purchase-item__pricing">
+                  <p class="purchase-item__price lead">10.49 USD</p>
+                  <p class="purchase-item__price--old elemental">18.99 USD</p>
+                </div>    
+              </div>              
+            </li>
+            <li class="order-summary__item purchase-item">
+              <div class="purchase-item__aside">
+                <img class="purchase-item__image" src="bread.jpg" alt="">
+                <div class="purchase-item__buttons">
+                  <button class="btn btn--icon-copper btn--wishlist">
+                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13062 2.26001C9.76714 1.62349 10.6304 1.2659 11.5306 1.2659C12.4308 1.2659 13.2941 1.62349 13.9306 2.26001C14.5671 2.89653 14.9247 3.75984 14.9247 4.66001C14.9247 5.56019 14.5671 6.42349 13.9306 7.06001L13.0573 7.93334L8.25729 12.7333L3.45729 7.93334L2.58396 7.06001C1.94744 6.42349 1.58984 5.56019 1.58984 4.66001C1.58984 3.75984 1.94744 2.89653 2.58396 2.26001C3.22048 1.62349 4.08378 1.2659 4.98396 1.2659C5.88413 1.2659 6.74744 1.62349 7.38396 2.26001L8.25729 3.13334L9.13062 2.26001Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Wishlist
+                  </button>
+                  <button class="btn btn--icon-copper">
+                    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.16211 1.83331H2.49544C1.75906 1.83331 1.16211 2.43027 1.16211 
+                      3.16665V5.83331C1.16211 6.56969 1.75906 7.16665 2.49544 7.16665H5.16211C5.89849 
+                      7.16665 6.49544 6.56969 6.49544 5.83331V3.16665C6.49544 2.43027 
+                      5.89849 1.83331 5.16211 1.83331Z" stroke-width="2" stroke-linecap="round" 
+                      stroke-linejoin="round"/>
+                      <path d="M5.16211 9.83331H2.49544C1.75906 9.83331 1.16211 10.4303 1.16211 
+                      11.1666V13.8333C1.16211 14.5697 1.75906 15.1666 2.49544 15.1666H5.16211C5.89849 
+                      15.1666 6.49544 14.5697 6.49544 13.8333V11.1666C6.49544 10.4303 5.89849 9.83331 
+                      5.16211 9.83331Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12.4961 11.1665H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.1628 13.8333H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.1628 5.83331H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12.4961 3.16647H8.49609" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    Compare            
+                  </button>
+                  <button class="btn btn--icon-black">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.18031 7.17999L0.820312 0.819992" stroke="#151515" stroke-width="1" stroke-linecap="round" stroke-linejoin="bevel"/>
+                      <path d="M7.18031 0.819992L0.820312 7.17999" stroke="#151515" stroke-width="1" stroke-linecap="round" stroke-linejoin="bevel"/>
+                      </svg>
+                    Delete                    
+                  </button>
+                </div>
+              </div>
+              <div class="purchase-item__info">
+                <h3 class="purchase-item__name">Product Title</h3>
+                <table class="purchase-item__specs">
+                  <tr>
+                    <td>Farm:</td>
+                    <td>Tharamis Farm</td>
+                  </tr>
+                  <tr>
+                    <td>Freshness:</td>
+                    <td>1 day</td>
+                  </tr>
+                </table>
+                <div class="purchase-item__pricing">
+                  <p class="purchase-item__price lead">9.49 USD</p>
+                  <p class="purchase-item__price--old elemental">15.99 USD</p>
+                </div>    
+              </div>
+            </li>
+          </ul>
+          <table class="order-summary__сalculation calc-table">
+            <tr>
+              <td class="calc-table__key">Subtotal</td>
+              <td class="calc-table__value">32.97 USD</td>
+            </tr>
+            <tr>
+              <td class="calc-table__key">Tax</td>
+              <td class="calc-table__value">5.61 USD (17%)</td>
+            </tr>
+            <tr>
+              <td class="calc-table__key">Shipping</td>
+              <td class="calc-table__value">0 USD</td>
+            </tr>
+          </table>
+          <form class="purchase__form">
+            <input class="subscribe__input" type="text" placeholder="Apply promo code">
+            <button class="btn purchase__button">Apply now</button>
+          </form>
+        </div>
+        <div class="billing">
+          <form action="" class="form">
+            <div class="billing__info billing__item">
+              <h2>Billing Info</h2>
+              <p>Please enter your billing info</p>
+                <div class="form__item">
+                  <label for="">First name<input type="text" placeholder="First Name" required></label>
+                </div>
+                <div class="form__item">
+                  <label for="">Last name<input type="text" placeholder="Last Name" required></label>
+                </div>
+                <div class="form__item">              
+                  <label for="">E-mail address<input type="email" placeholder="E-mail" required></label></div>
+                <div class="form__item">
+                  <label for="">Phone number<input type="phone" placeholder="Phone" required></label>
+                </div>
+                <div class="form__item">
+                  <label for="">Address<input type="text" placeholder="Address" required></label>
+                </div>
+                <div class="form__item">
+                  <label for="">Town/City<input type="text" placeholder="Town or City" required></label>
+                </div>
+                <div class="form__item">
+                  <label for="">PState/Country<input type="text" placeholder="Choose a state or country" required></label>
+                </div>
+                <div class="form__item">
+                  <label for="">ZIP/Postal code<input type="number" pattern="[0-9]*" placeholder="ZIP or Postal code" required></label>
+                </div>
+                <div class="form__item form__item--contrast">
+                  <label class="check">
+                    <input class="check__input" type="checkbox" checked>
+                    <span class="check__box"></span>Ship to a different address?
+                  </label>
+                </div>
+              </div>
+            <div class="billing__method billing__item">
+              <h2>Billing method</h2>
+              <p>Please enter your payment method</p>
+                <div class="form__item form__item--contrast">
+                  <input id="fedex" class="radio__input" type="radio" name="billing-method" value="1" checked>
+                  <label for="fedex" class="radio">
+                    <span class="radio__button"></span>
+                    <span>FedEx
+                      <span class="billing__price">+19 USD</span>
+                      Additional Price
+                    </span>
+                    <img src="fedex.svg" alt=""> 
+                  </label>              
+                </div>
+                <div class="form__item form__item--contrast">
+                  <input id="dhl" class="radio__input" type="radio" name="billing-method" value="1">
+                  <label for="dhl" class="radio">
+                    <span class="radio__button"></span>
+                    <span>DHL
+                      <span class="billing__price">+15 USD</span> 
+                      Additional Price
+                    </span>
+                    <img src="dhl.svg" alt=""> 
+                  </label>              
+                </div>              
+            </div>
+            <div class="billing__payment billing__item">
+              <h2>Payment method</h2>
+              <p>Please choose your payment method</p>
+                <div class="form__item form__item--contrast">
+                  <input id="credit-card" class="radio__input" type="radio" name="payment-method" value="1" checked>
+                  <label for="credit-card" class="radio">
+                    <span class="radio__button"></span>
+                    <span>Credit card</span>
+                    <img src="visa.svg" alt=""> 
+                  </label>              
+                </div>
+                <div class="form__item form__item--contrast">
+                  <input id="paypal" class="radio__input" type="radio" name="payment-method" value="1" checked>
+                  <label for="paypal" class="radio">
+                    <span class="radio__button"></span>
+                    <span>PayPal</span>
+                    <img src="paypal.svg" alt=""> 
+                  </label>              
+                </div>              
+            </div>
+            <div class="billing__additional billing__item">
+              <h2>Additional informations</h2>
+              <p>Need something else? We will make it for you!</p>
+              <textarea class="form__item"name="" id="" rows="5">Need a specific delivery day? Sending a gitf? Let’s say ...</textarea>
+            </div>
+            <div class="billing__confirmation billing__item">
+              <h2>Confirmation</h2>
+              <p>We are getting to the end. Just few clicks and your order si ready</p>
+              <div class="form__item form__item--contrast">
+                <label class="check">
+                  <input class="check__input" type="checkbox" checked>
+                  <span class="check__box"></span>I agree with sending an Marketing and newsletter emails. No spam, promissed
+                </label>
+              </div>
+              <div class="form__item form__item--contrast">
+                <label class="check">
+                  <input class="check__input" type="checkbox" checked>
+                  <span class="check__box"></span>I agree with <a href="#">our terms and conditions</a> and <a href="#">privacy policy</a>.
+                </label>
+              </div>
+            </div>
+            <button class="btn btn--contrast-back">Confirm order</button>           
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
