@@ -7,20 +7,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="common.css">
   <title>Checkout</title>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__nav">
-        <ul class="nav__col1">
+      <div class="header__nav header-nav">
+        <ul class="nav__col">
           <li><a href="#">Chat with us</a></li>
           <li>+420 336 775 664</li>
           <li>info@freshnesecom.com</li>
         </ul>
-        <ul class="nav__col2">
+        <ul class="nav__col">
           <li><a href="#">Blog</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Careers</a></li>
@@ -29,28 +29,50 @@
       <div class="header__main">
         <img class="brand" src="Freshnesecom.svg" alt="">
         <div class="search-bar">
-          <div class="dropdown">
-            <div class="dropdown__selected">
+          <div class="search-bar__dropdown search-dropdown">
+            <div class="search-dropdown__selected">
               <div class="old-text">All categories</div>
               <div class="new-text" data-text="category"></div>
             </div>
-            <div class="dropdown__options">
-              <a class="selected" href="#">All categories</a>
-              <a href="#">Bakery</a>
-              <a href="#">Fruit and vegetables</a>
-              <a href="#">Meat and fish</a>
-              <a href="#">Drinks</a>
-              <a href="#">Kitchen</a>
-              <a href="#">Special nutrition</a>
-              <a href="#">Baby</a>
-              <a href="#">Pharmacy</a>
+            <div class="search-dropdown__options">
+              <ul class="search-dropdown__list">
+                <li class="search-dropdown__item search-dropdown__item--selected">
+                  <a href="#">All categories</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Bakery</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Fruit and vegetables</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Meat and fish</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Drinks</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Kitchen</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Special nutrition</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Baby</a>
+                </li>
+                <li class="search-dropdown__item">
+                  <a href="#">Pharmacy</a>
+                </li>
+              </ul>
             </div>
           </div>
           <input type="search" class="search" placeholder="Search Products, categories ...">
         </div>
         <div class="user">
-          <button class="user__account"></button>
-          <button class="user__basket"></button>
+          <button class="user__btn btn--account"></button>
+          <button class="user__btn btn--basket">
+            <span>5</span>
+          </button>
         </div>
       </div>
     </div>
@@ -347,7 +369,6 @@
                   </label>              
                 </div>              
             </div>
-  
             <div class="billing__additional billing__item">
               <h2>Additional informations</h2>
               <p>Need something else? We will make it for you!</p>
