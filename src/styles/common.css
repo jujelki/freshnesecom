@@ -1,6 +1,12 @@
 @import "./imports.css";
 
 /* sizes */
+
+@custom-media --s (width <= 768px);
+@custom-media --m (min-width: 769px);
+@custom-media --xl (min-width: 1025px);
+@custom-media --xl-sm (width <= 1025px);
+
 * {
   box-sizing: border-box;
 }

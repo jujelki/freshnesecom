@@ -6,6 +6,36 @@
   border-radius: 12px;
 }
 
+.products--compact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: min-content;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1025px)  {
+  .products--compact {
+    grid-auto-flow: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px)  {
+  .products--compact {
+    grid-auto-flow: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 560px)  {
+  .products--compact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .products--compact .product {
   flex-basis: 300px;
   padding: 16px;
