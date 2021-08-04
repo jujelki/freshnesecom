@@ -5,10 +5,25 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1025px)  { 
+  .footer__nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 40px 10px 5px;
+  }
+}
+
 .footer__nav--col {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 1025px)  { 
+  .footer__nav--col {
+    width: 40%;
+    padding-bottom: 20px;
+  }
 }
 
 .footer__nav--col h4 {
@@ -22,6 +37,13 @@
 .footer__product-tags {
   height: 70px;
   margin: 20px 0;
+}
+
+
+@media screen and (max-width: 1025px)  { 
+  .footer__product-tags {
+    display: none;
+  }
 }
 
 .footer__product-tags a {

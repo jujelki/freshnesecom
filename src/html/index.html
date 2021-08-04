@@ -27,6 +27,9 @@
         </ul>
       </div>
       <div class="header__main">
+        <div class="burger-menu">
+          <div class="burger"></div>  
+        </div>
         <img class="brand" src="Freshnesecom.svg" alt="">
         <div class="search-bar">
           <div class="search-bar__dropdown search-dropdown">
@@ -66,9 +69,10 @@
               </ul>
             </div>
           </div>
-          <input type="search" class="search" placeholder="Search Products, categories ...">
+          <input type="search" class="search search--web" placeholder="Search Products, categories ...">
         </div>
         <div class="user">
+          <input type="search" class="search search--mob" placeholder="Search Products, Categories">
           <button class="user__btn btn--account"></button>
           <button class="user__btn btn--basket">
             <span>5</span>
@@ -91,7 +95,7 @@
   </nav>
   <main>
     <div class="container">
-      <div class="row-8">
+      <div class="banners">
         <nav class="menu-category">
           <h4>Category menu</h4>
           <ul class="menu-category__list">
@@ -109,26 +113,30 @@
             </svg>
           </button>
         </nav>
-        <div class="banner">
-          <p class="banner__subfocus">Banner subfocus</p>
-          <h4 class="banner__title">Banner title</h4>
+        <a href="" class="banner">
+          <div class="banner__text">
+            <p class="banner__subfocus">Banner subfocus</p>
+            <h4 class="banner__title">Banner title</h4>
+          </div>
           <button class="btn btn--contrast-border btn--icon-green btn--icon-rotate-right">Read recepies
             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.81348 1.53336L4.55348 4.27336C4.67838 4.39752 4.84735 4.46722 5.02348 4.46722C5.1996 4.46722 5.36857 4.39752 5.49348 4.27336L8.16014 1.60669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>
             </svg>
           </button>
-        </div>
-          <div class="banner">
-          <p class="banner__subfocus">Banner subfocus</p>
-          <h4 class="banner__title">Banner title</h4>
-          <button class="btn btn--contrast-border btn--icon-green btn--icon-rotate-right">Read recepies
-            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.81348 1.53336L4.55348 4.27336C4.67838 4.39752 4.84735 4.46722 5.02348 4.46722C5.1996 4.46722 5.36857 4.39752 5.49348 4.27336L8.16014 1.60669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>
-            </svg>
-          </button>
-        </div>
+      </a>
+        <a href="" class="banner">
+            <div class="banner__text">
+              <p class="banner__subfocus">Banner subfocus</p>
+              <h4 class="banner__title">Banner title</h4>
+            </div>
+            <button class="btn btn--contrast-border btn--icon-green btn--icon-rotate-right">Read recepies
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81348 1.53336L4.55348 4.27336C4.67838 4.39752 4.84735 4.46722 5.02348 4.46722C5.1996 4.46722 5.36857 4.39752 5.49348 4.27336L8.16014 1.60669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+              </svg>
+            </button>
+        </a>
       </div>
-      <div class="row-4">
+      <div class="products products--compact">
         <nav class="menu-category ">
           <h4>Best from Farmers</h4>
           <ul class="menu-category__list">
@@ -146,63 +154,9 @@
             </svg>
           </button>
         </nav>
-        <div class="products products--compact">
+        
           <div class="product">
             <img src="popcorn.jpg" alt="" class="product__image">
-            <div class="product__info">
-              <h4 class="product__title">Product Title</h4>
-              <p class="product__description">Space for a small product description </p>
-              <div class="product__rating" percent="80"></div>
-              <table class="product__specs">
-                <tr>
-                  <td>Freshness</td>
-                  <td>New (extra new)</td>
-                </tr>
-                <tr>
-                  <td>Farm</td>
-                  <td><a class="product__producer">Grocery Tarm Fields</a></td>
-                </tr>
-                <tr>
-                  <td>Delivery</td>
-                  <td>Europe</td>
-                </tr>
-                <tr>
-                  <td>Stock</td>
-                  <td>320 pcs</td>
-                </tr>
-              </table>
-            </div>
-            <div class="product__buy">
-              <div class="product__pricing">
-                <p class="product__price--new lead">19.49 USD</p>
-                <p class="product__price--old elemental">25.99 USD</p>
-              </div>
-              <div class="product__delivery-info">
-                <p class="product__delivery-cost">Free shipping</p>
-                <p class="product__delivery-duration">Delivery in 1 day</p>
-              </div>
-              <button
-                class="btn btn--contrast-back btn--icon-white btn--icon-rotate-right btn--detail product__btn">Product
-                Detail
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M1.81348 1.53336L4.55348 4.27336C4.67838 4.39752 4.84735 4.46722 5.02348 4.46722C5.1996 4.46722 5.36857 4.39752 5.49348 4.27336L8.16014 1.60669"
-                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel" />
-                </svg>
-              </button>
-              <button class="btn btn--basic btn--icon-black btn--wishlist product__btn">
-                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.13062 2.26001C9.76714 1.62349 10.6304 1.2659 11.5306 1.2659C12.4308 1.2659 13.2941 1.62349 13.9306 2.26001C14.5671 2.89653 14.9247 3.75984 14.9247 4.66001C14.9247 5.56019 14.5671 6.42349 13.9306 7.06001L13.0573 7.93334L8.25729 12.7333L3.45729 7.93334L2.58396 7.06001C1.94744 6.42349 1.58984 5.56019 1.58984 4.66001C1.58984 3.75984 1.94744 2.89653 2.58396 2.26001C3.22048 1.62349 4.08378 1.2659 4.98396 1.2659C5.88413 1.2659 6.74744 1.62349 7.38396 2.26001L8.25729 3.13334L9.13062 2.26001Z"
-                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                Add to wish list</button>
-              <button class="btn btn--contrast-back btn--buy-now">Buy now</button>
-            </div>
-            <span class="onsale">-15%</span>
-          </div>
-          <div class="product">
-            <img src="lime.jpg" alt="" class="product__image">
             <div class="product__info">
               <h4 class="product__title">Product Title</h4>
               <p class="product__description">Space for a small product description </p>
@@ -309,9 +263,62 @@
             </div>
             <span class="onsale">-15%</span>
           </div>
-        </div>
-      </div>
-      <div class="row-4 products--compact">
+          <div class="product">
+            <img src="lime.jpg" alt="" class="product__image">
+            <div class="product__info">
+              <h4 class="product__title">Product Title</h4>
+              <p class="product__description">Space for a small product description </p>
+              <div class="product__rating" percent="80"></div>
+              <table class="product__specs">
+                <tr>
+                  <td>Freshness</td>
+                  <td>New (extra new)</td>
+                </tr>
+                <tr>
+                  <td>Farm</td>
+                  <td><a class="product__producer">Grocery Tarm Fields</a></td>
+                </tr>
+                <tr>
+                  <td>Delivery</td>
+                  <td>Europe</td>
+                </tr>
+                <tr>
+                  <td>Stock</td>
+                  <td>320 pcs</td>
+                </tr>
+              </table>
+            </div>
+            <div class="product__buy">
+              <div class="product__pricing">
+                <p class="product__price--new lead">19.49 USD</p>
+                <p class="product__price--old elemental">25.99 USD</p>
+              </div>
+              <div class="product__delivery-info">
+                <p class="product__delivery-cost">Free shipping</p>
+                <p class="product__delivery-duration">Delivery in 1 day</p>
+              </div>
+              <button
+                class="btn btn--contrast-back btn--icon-white btn--icon-rotate-right btn--detail product__btn">Product
+                Detail
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.81348 1.53336L4.55348 4.27336C4.67838 4.39752 4.84735 4.46722 5.02348 4.46722C5.1996 4.46722 5.36857 4.39752 5.49348 4.27336L8.16014 1.60669"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel" />
+                </svg>
+              </button>
+              <button class="btn btn--basic btn--icon-black btn--wishlist product__btn">
+                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.13062 2.26001C9.76714 1.62349 10.6304 1.2659 11.5306 1.2659C12.4308 1.2659 13.2941 1.62349 13.9306 2.26001C14.5671 2.89653 14.9247 3.75984 14.9247 4.66001C14.9247 5.56019 14.5671 6.42349 13.9306 7.06001L13.0573 7.93334L8.25729 12.7333L3.45729 7.93334L2.58396 7.06001C1.94744 6.42349 1.58984 5.56019 1.58984 4.66001C1.58984 3.75984 1.94744 2.89653 2.58396 2.26001C3.22048 1.62349 4.08378 1.2659 4.98396 1.2659C5.88413 1.2659 6.74744 1.62349 7.38396 2.26001L8.25729 3.13334L9.13062 2.26001Z"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Add to wish list</button>
+              <button class="btn btn--contrast-back btn--buy-now">Buy now</button>
+            </div>
+            <span class="onsale">-15%</span>
+          </div>
+        
+
         <div class="product">
           <img src="bread.jpg" alt="" class="product__image">
           <div class="product__info">
@@ -529,7 +536,7 @@
           <span class="onsale">-15%</span>
         </div>
       </div>
-      <div class="blog row-12">
+      <section class="blog">
         <div class="blog__coll blog__coll--1">
           <div class="blog__post blog__post--highlight blog-post">
             <img src="blog-pic1.jpg" alt="">
@@ -548,7 +555,7 @@
         </div>
         <div class="blog__coll blog__coll--3">
           <div class="blog__post blog-post">
-            <div class="blog-post__text blog-post">
+            <div class="blog-post__text">
               <h5 class="blog-post__heading">Salat is kinda good start to your morning routines</h5>
               <p class="blog-post__author caption">Author 14.01.2021</p>
             </div>
@@ -569,7 +576,7 @@
             <img src="blog-pic5.jpg" alt="">
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer>
@@ -628,5 +635,4 @@
     </div>
   </footer>
 </body>
-
 </html>

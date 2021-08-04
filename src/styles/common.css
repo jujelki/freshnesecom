@@ -1,6 +1,12 @@
 @import "./imports.css";
 
 /* sizes */
+
+@custom-media --s (width <= 768px);
+@custom-media --m (min-width: 769px);
+@custom-media --xl (min-width: 1025px);
+@custom-media --xl-sm (width <= 1025px);
+
 * {
   box-sizing: border-box;
 }
@@ -17,6 +23,11 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 560px) {
+  .container {
+    padding: 0 30px;
+  }
+}
 .row-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -482,6 +493,12 @@ ul.breadcrumbs li+li:before {
 /*menu*/
 .menu {
   background-color: var(--c-black60);
+}
+
+@media screen and (max-width: 1025px)  { 
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
