@@ -27,6 +27,11 @@
         </ul>
       </div>
       <div class="header__main">
+        <div class="burger-menu" id="burger">
+          <div class="burger">
+            <span></span>
+          </div>  
+        </div>
         <img class="brand" src="Freshnesecom.svg" alt="">
         <div class="search-bar">
           <div class="search-bar__dropdown search-dropdown">
@@ -66,9 +71,10 @@
               </ul>
             </div>
           </div>
-          <input type="search" class="search" placeholder="Search Products, categories ...">
+          <input type="search" class="search search--web" placeholder="Search Products, categories ...">
         </div>
         <div class="user">
+          <input type="search" class="search search--mob" placeholder="Search Products, Categories">
           <button class="user__btn btn--account"></button>
           <button class="user__btn btn--basket">
             <span>5</span>
@@ -79,14 +85,67 @@
   </header>
   <nav class="menu container">
     <ul class="menu__list">
-      <li class="menu__item"><a href="#">Bakery</a></li>
-      <li class="menu__item"><a href="#">Fruit and vegetables</a></li>
-      <li class="menu__item"><a href="#">Meat and Fish</a></li>
-      <li class="menu__item"><a href="#">Drinks</a></li>
-      <li class="menu__item"><a href="#">Kitchen</a></li>
-      <li class="menu__item"><a href="#">Special nutrition</a></li>
-      <li class="menu__item"><a href="#">Baby</a></li>
-      <li class="menu__item"><a href="#">Pharmacy</a></li>
+      <li class="menu__item">Bakery
+        <span class="menu__chevron"></span>
+        <ul class="nested-menu">
+          <li><a>Wheat bread</a></li>
+          <li><a>Rye bread</a></li>
+          <li><a>Multigrain bread</a></li>
+        </ul>
+      </li>
+      <li class="menu__item">Fruit and vegetables
+        <span class="menu__chevron"></span>
+        <ul class="nested-menu">
+          <li><a>Apples</a></li>
+          <li><a>Tomatoes</a></li>
+          <li><a>Potatoe</a></li>
+          <li><a>Legumes</a></li>
+        </ul>
+      </li>
+      <li class="menu__item">Meat and Fish
+        <span class="menu__chevron"></span>
+        <ul class="nested-menu">
+          <li><a>Beef</a></li>
+          <li><a>Pork</a></li>
+          <li><a>Chicken</a></li>
+          <li><a>Salmon</a></li>
+        </ul>
+      </li>
+      <li class="menu__item">Drinks
+        <span class="menu__chevron"></span>
+        <ul class="nested-menu">
+          <li><a>Tea</a></li>
+          <li><a>Coffee</a></li>
+          <li><a>Juice</a></li>
+          <li><a>Chocolate drinks</a></li>
+        </ul>
+      </li>
+      <li class="menu__item">Kitchen
+        <span class="menu__chevron"></span>
+        <ul class="nested-menu">
+          <li><a>Tableware</a></li>
+          <li><a>Kitchen organisers</a></li>
+          <li><a>Serveware</a></li>
+          <li><a>Storage items</a></li>
+        </ul>
+      </li>
+      <li class="menu__item">Special nutrition
+        <span class="menu__chevron"></span>
+        <ul class="nested-menu">
+          <li><a>Gluten-free</a></li>
+          <li><a>Diabetic food</a></li>
+          <li><a>Vitamins</a></li>
+        </ul>
+      </li>
+      <li class="menu__item">Pharmacy
+        <span class="menu__chevron"></span>
+        <ul class="nested-menu">
+          <li><a>Cought, cold and flu</a></li>
+          <li><a>Allergy</a></li>
+          <li><a>Pain relief</a></li>
+          <li><a>First aid</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <div class="container">
