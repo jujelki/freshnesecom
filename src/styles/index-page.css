@@ -55,7 +55,7 @@
 
 .banner {
   position: relative;
-  padding: 30px;
+  padding: 60px 30px 30px;
   border-radius: 12px;
   border: 1px solid var(--c-secondary);
   background-repeat: no-repeat;
