@@ -1,6 +1,26 @@
+.checkout-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  padding: 25px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-content {
+    display: block;
+    padding: 12px 0;
+  }
+}
+
 .billing {
   grid-column: 1 / 8;
   order: 1;
+}
+
+@media screen and (max-width: 1025px) {
+  .billing {
+    grid-column: 1 / 6;
+  }
 }
 
 .order-summary {
@@ -10,6 +30,18 @@
   border: 1px solid var(--c-black30);
   border-radius: 12px;
   height: fit-content;
+}
+
+@media screen and (max-width: 1025px) {
+  .order-summary  {
+    grid-column: 7 / 13;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .order-summary  {
+    padding: 20px 30px;
+  }
 }
 
 .order-summary__warning {
@@ -26,19 +58,47 @@
 .purchase-item {
   display: flex;
   gap: 18px;
+  padding: 20px 0;
   border-bottom: 1px solid var(--c-black40);
 }
 
-.purchase-item {
-  padding: 20px 0;
+@media screen and (max-width: 480px) {
+  .purchase-item {
+    display: block;
+    padding: 25px 0;
+  }  
 }
 
 .purchase-item__aside {
-  max-width: 25%;
-}   
+  max-width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .purchase-item__aside{
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .purchase-item__aside{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .purchase-item__aside{
+    max-width: 100%;
+  }
+}
 
 .purchase-item__buttons {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .purchase-item__buttons {
+    display: flex;
+  }
 }
 
 .purchase-item__buttons button {
@@ -48,14 +108,32 @@
   color: var(--c-black20);
 }
 
+.purchase-item__buttons button:hover {
+  color: var(--c-copper10);
+  text-decoration: underline;
+}
+
 .purchase-item__buttons button svg {
   width: 13px;
   height: 13px;
+  margin-right: 8px;
 }
 
 .purchase-item__image {
   height: 67px;
   border-radius: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .purchase-item__image {
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .purchase-item__image {
+    height: 165px;
+  }
 }
 
 .purchase-item__info {
@@ -68,10 +146,22 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 480px) {
+  .purchase-item__name {
+    margin-top: 15px;
+  }
+}
+
 .purchase-item__specs {
   width: 70%;
   margin-bottom: 10px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1025px) {
+  .purchase-item__specs {
+    width: auto;
+  }
 }
 
 .purchase-item__specs td:first-of-type {
@@ -84,6 +174,13 @@
   font-weight: 600;
   color: var(--c-secondary);
 }
+
+@media screen and (max-width: 480px) {
+  p.purchase-item__price {
+    font-size: 22px;
+  }
+}
+
 
 .purchase-item__price--old {
   color: var(--c-black30);
@@ -110,14 +207,14 @@
   align-items: center;
 }
 
-.purchase__form input {
+.purchase__form input.purchase__input {
   width: 100%;
 }
 
-.purchase__button {
+.btn.purchase__button {
   position: absolute;
-  right: 10px;
-  padding: 0;
+  right: 0px;
+  padding: 10px;
 }
 
 /*biling info section*/
@@ -125,6 +222,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1025px) {
+  .billing__info {
+    display: block;
+  }
 }
 
 .billing__info  p {
@@ -161,7 +264,13 @@
   width: 47%;
 }
 
-.form__item input {
+@media screen and (max-width: 1025px) {
+  .billing__info .form__item  {
+    width: 320px;
+  }
+}
+
+.billing__info .form__item input {
   width: 100%;
 }
 
@@ -196,6 +305,25 @@ span.billing__price {
   margin-left: 60px;
   color: var(--c-secondary);
 }
+
+@media screen and (max-width: 800px) {
+  span.billing__price   {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  span.billing__price   {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  span.billing__price   {
+    margin-left: 30px;
+  }
+}
+
 
 .billing__item textarea {
   width: 100%;
