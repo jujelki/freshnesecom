@@ -38,6 +38,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .order-summary  {
+    margin-bottom: 24px;
+  }
+}
+
 @media screen and (max-width: 560px) {
   .order-summary  {
     padding: 20px 30px;
@@ -65,7 +71,7 @@
 @media screen and (max-width: 480px) {
   .purchase-item {
     display: block;
-    padding: 25px 0;
+    padding: 25px 0 18px;
   }  
 }
 
@@ -266,7 +272,7 @@
 
 @media screen and (max-width: 1025px) {
   .billing__info .form__item  {
-    width: 320px;
+    width: 100%;
   }
 }
 
