@@ -202,9 +202,9 @@ header img.brand {
 .btn--basket span {
   position: absolute;
   top: 12px;
-  left: -2px;
-  width: 12px;
-  height: 12px;
+  text-align: center;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   font-size: 10px;
   background-color: var(--c-copper20);
