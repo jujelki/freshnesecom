@@ -548,7 +548,7 @@ ul.breadcrumbs li+li:before {
   width: 20px;
   height: 20px;
   background-image: url(shevron-down.svg);
-  background-position: 50% calc((100%-20px)/2);
+  background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
   transform: rotate(0deg) scale(1);
