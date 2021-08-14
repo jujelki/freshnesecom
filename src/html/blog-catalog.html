@@ -27,6 +27,11 @@
         </ul>
       </div>
       <div class="header__main">
+        <div class="burger-menu" id="burger">
+          <div class="burger">
+            <span></span>
+          </div>  
+        </div>
         <img class="brand" src="Freshnesecom.svg" alt="">
         <div class="search-bar">
           <div class="search-bar__dropdown search-dropdown">
@@ -66,7 +71,7 @@
               </ul>
             </div>
           </div>
-          <input type="search" class="search" placeholder="Search Products, categories ...">
+          <input type="search" class="search search--web" placeholder="Search Products, categories ...">
         </div>
         <div class="user">
           <input type="search" class="search search--mob" placeholder="Search Products, Categories">
@@ -146,12 +151,12 @@
   <div class="container">
     <ul class="breadcrumbs">
       <li><a href="index.html">Home</a></li>
-      <li><a href="catalog.html">Fruits and vegetables</a></li>
+      <li><a href="#">Blog</a></li>
     </ul>
   </div>
-  <main class="blog">
+  <main class="blog-catalog">
     <div class="container">
-      <div class="row-2">
+      <section class="blog-catalog__highlights">
         <div class="blog__post blog__post--highlight">
           <img src="blog-pic1.jpg" alt="">
           <div class="blog-post__text">
@@ -166,8 +171,8 @@
             <p class="body">Author 14.01.2021</p>
           </div>
         </div>
-      </div>
-      <div class="row-4">
+      </section>
+      <section class="blog-catalog__base">
         <aside>
           <figure>
             <figcaption class="lead">Archives</figcaption>
@@ -327,7 +332,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="pagination">
         <div class="pagination__pages">
           <span>Pages</span>
@@ -336,7 +341,7 @@
           <a class="pagination__button" href="#">3</a>
           <a class="pagination__button" href="#">4</a>
         </div>
-        <button class="btn btn--contrast-back btn--icon-white">Show more products
+        <button class="btn btn--contrast-back btn--icon-white pagination__more">Show more products
           <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M1.81348 1.53336L4.55348 4.27336C4.67838 4.39752 4.84735 4.46722 5.02348 4.46722C5.1996 4.46722 5.36857 4.39752 5.49348 4.27336L8.16014 1.60669"
