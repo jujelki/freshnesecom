@@ -71,11 +71,11 @@ a.banner:hover {
 
 
 .banner:first-of-type {
-  background-image: url(../src/images/content_images/banner.png);
+  background-image: url(banner.png);
 }
 
 .banner:last-of-type {
-  background-image: url(../src/images/content_images/banner-2.jpg);
+  background-image: url(banner-2.jpg);
 }
 
 @media screen and (max-width: 1025px)  {

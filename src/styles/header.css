@@ -66,46 +66,62 @@
   }
 }
 
-.burger-menu {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  transform: rotate(-180deg);
-  transition: all .5s ease;
+@media screen and (min-width: 1026px) {
+  .burger-menu,
+  .burger {
+    display: none;
+    visibility: hidden;
+  }
 }
 
-.burger {
-  position: absolute;
-  background: var(--c-secondary);
-  width: 25px;
-  height: 3px;
-  top: 50%;
-  right: 0px;
-}
-.burger::before {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 25px;
-  height: 3px;
-  top: 8px;
-  background: var(--c-secondary);
-}
-.burger::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 25px;
-  height: 3px;
-  bottom: 8px;
-  background: var(--c-secondary);
+@media screen and (max-width: 1025px) {
+  .burger-menu {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: rotate(-180deg);
+    transition: all .5s ease;
+  }
 }
 
-.burger-menu--open {
-  transform: rotate(180deg);
-  transition: all .5s ease;
+
+@media screen and (max-width: 1025px) {
+  .burger {
+    position: absolute;
+    background: var(--c-secondary);
+    width: 25px;
+    height: 3px;
+    top: 50%;
+    right: 0px;
+  }
+  .burger::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 3px;
+    top: 8px;
+    background: var(--c-secondary);
+  }
+  .burger::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 3px;
+    bottom: 8px;
+    background: var(--c-secondary);
+  }
+
+  .burger-menu--open {
+    transform: rotate(180deg);
+    transition: all .5s ease;
+  }
 }
+
+
 
 .burger-menu--open .burger,
 .burger-menu--open .burger::after,
@@ -186,9 +202,9 @@ header img.brand {
 .btn--basket span {
   position: absolute;
   top: 12px;
-  left: -2px;
-  width: 12px;
-  height: 12px;
+  text-align: center;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   font-size: 10px;
   background-color: var(--c-copper20);

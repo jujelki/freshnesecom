@@ -477,6 +477,13 @@ ul.breadcrumbs li+li:before {
   font-size: 14px;
 }
 
+@media screen and (max-width: 560px) {
+  .pagination {
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+}
+
 .pagination span {
   color: var(--c-black20);
 }
@@ -485,6 +492,14 @@ ul.breadcrumbs li+li:before {
   color: black;
   padding: 2px 6px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 560px) {
+  .pagination__more {
+    order: 2;
+    margin: 20px auto auto auto;
+    padding: 11px 16px;
+  }
 }
 
 .pagination__page:active {

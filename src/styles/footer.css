@@ -13,6 +13,14 @@
   }
 }
 
+@media screen and (max-width: 560px)  { 
+  .footer__nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 10px 5px;
+  }
+}
+
 .footer__nav--col {
   margin: 0;
   padding: 0;
