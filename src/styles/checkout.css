@@ -24,13 +24,12 @@
 }
 
 .order-summary {
-  display: flex;
-  flex-direction: column;
   grid-column: 8 / 13;  
   order: 2;
   padding: 30px 15px;
   border: 1px solid var(--c-black30);
   border-radius: 12px;
+  height: min-content;
 }
 
 @media screen and (max-width: 1025px) {
@@ -333,6 +332,7 @@ span.billing__price {
 
 
 .billing__item textarea {
+  max-width: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 400;

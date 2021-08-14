@@ -295,8 +295,8 @@
   padding: 8px 8px;
 }
 
-.btn--detail,
-.btn--wishlist {
+.product .btn--detail,
+.product .btn--wishlist {
   margin-bottom: 12px;
 }
 
