@@ -24,12 +24,13 @@
 }
 
 .order-summary {
+  display: flex;
+  flex-direction: column;
   grid-column: 8 / 13;  
   order: 2;
   padding: 30px 15px;
   border: 1px solid var(--c-black30);
   border-radius: 12px;
-  height: fit-content;
 }
 
 @media screen and (max-width: 1025px) {
