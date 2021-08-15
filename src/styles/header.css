@@ -86,7 +86,6 @@
   }
 }
 
-
 @media screen and (max-width: 1025px) {
   .burger {
     position: absolute;
@@ -120,8 +119,6 @@
     transition: all .5s ease;
   }
 }
-
-
 
 .burger-menu--open .burger,
 .burger-menu--open .burger::after,
