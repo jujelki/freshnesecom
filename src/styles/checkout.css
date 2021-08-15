@@ -330,10 +330,15 @@ span.billing__price {
   }
 }
 
+.billing__item {
+  max-width: 100%;
+}
 
 .billing__item textarea {
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
+  resize: none;
+  overflow: auto;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: var(--c-black20);
