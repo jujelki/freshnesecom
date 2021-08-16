@@ -23,9 +23,15 @@ function css() {
 const imageTypes = '{jpeg,jpg,svg,png}';
 
 function images() {
-    return src(`src/images/**/*.${imageTypes}`)
-    .pipe(flatten())
-    .pipe(dest('output/'));
+  return src(`src/images/**/*.${imageTypes}`)
+  .pipe(flatten())
+  .pipe(dest('output/'));
+}
+
+function scripts() {
+  return src(`src/**/*.js`)
+  .pipe(flatten())
+  .pipe(dest('output/'));
 }
 
 function clean() {
@@ -36,6 +42,7 @@ function watchFiles() {
     watch("src/html/**/*.html", { ignoreInitial: false }, html);
     watch("src/styles/**/*.css", { ignoreInitial: false }, css);
     watch(`src/images/**/*.${imageTypes}`, { ignoreInitial: false }, images);
+    watch("src/**/*.js", { ignoreInitial: false }, scripts);
 }
 
 const build = series(clean, parallel(css, html, images));
@@ -44,5 +51,6 @@ exports.watch = parallel(watchFiles);
 exports.clean = clean;
 exports.images = images;
 exports.css = css;
+exports.scripts = scripts;
 exports.build = build;
 exports.default = build;
