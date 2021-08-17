@@ -231,7 +231,10 @@ button:hover.btn--contrast-border {
   border-color: var(--c-green10);
 }
 
+a:hover.btn--contrast-back, 
 button:hover.btn--contrast-back {
+  color: var(--c-white);
+  text-decoration: none;
   background-color: var(--c-copper00);
   border-color: var(--c-copper10);
 }
@@ -383,63 +386,85 @@ button:hover.btn--contrast-back {
 } 
 
 /*select's styles*/
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0;
-  background:transparent;
-  background-image: none;
-}
-
-.filters--horizontal .filters__item.select {
-  padding: 0;
-}
-
-.filter__item > select {
-  padding: 0;
-}
-
-select::-ms-expand {
+.select-hidden {
   display: none;
+  visibility: hidden;
+  padding-right: 10px;
 }
 
 .select {
-  position: relative;
-  display: flex;
-  width: 20em;
-  height: 3em;
-  line-height: 3;
-  background: transparent;
-  overflow: hidden;
-  border-radius: .25em;
-}
-
-select {
-  padding: 7px 13px;
-  flex: 1;
-  color: var(--c-primary);
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: var(--c-primary);
+  width: 220px;
+  height: 40px;
 }
 
-.select::after {
-  content: '\25BC';
+.select--styled {
   position: absolute;
   top: 0;
   right: 0;
-  background: transparent;
-  cursor: pointer;
-  pointer-events: none;
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease;
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: ;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select--styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: var(--c-black20) transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select--styled:hover {
+  background-color: var(--c-black50);
+}
+.select--styled:active, .select-styled.active {
+  background-color: var(--c-black50);
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent var(--c-black20) transparent;
 }
 
-.select:hover::after {
-  color: var(--c-primary);
+.select__options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--c-black50);
+}
+.select__options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid var(--c-black20);
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select__options li:hover {
+  color: var(--c-secondary);
+  background: #fff;
+}
+.select__options li[rel="hide"] {
+  display: none;
 }
 
 /* tag-styled elements */
