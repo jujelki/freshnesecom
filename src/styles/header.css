@@ -6,7 +6,7 @@
   .header {
     position: sticky;
     top: 0;
-    padding: 25px 0;
+    padding: 20px 0;
     background-color: var(--c-white);
     z-index: 10;
   }
@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 560px)  {
   .header {
-   padding: 0 0 25px 0;
+   padding: 0 0 30px 0;
   }
 }
 
@@ -90,28 +90,28 @@
   .burger {
     position: absolute;
     background: var(--c-secondary);
-    width: 25px;
-    height: 3px;
+    width: 24px;
+    height: 2px;
     top: 50%;
     right: 0px;
   }
-  .burger::before {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 25px;
-    height: 3px;
-    top: 8px;
-    background: var(--c-secondary);
-  }
+
+  .burger::before,
   .burger::after {
     position: absolute;
     display: block;
     content: "";
-    width: 25px;
-    height: 3px;
-    bottom: 8px;
-    background: var(--c-secondary);
+    width: 24px;
+    height: 2px;
+    background: var(--c-secondary);  
+  }
+
+  .burger::before {
+    top: 7px;
+  }
+
+  .burger::after {
+    bottom: 7px;
   }
 
   .burger-menu--open {
@@ -126,21 +126,20 @@
   background-color: green;
 }
 
-header img.brand {
+header .brand {
   object-fit: contain;
   width: 175px;
-  height: 42px;
 }
 
 @media screen and (max-width: 1025px)  { 
-  header img.brand {
+  header .brand {
     position: absolute;
     left: calc((100% - 175px) /2 );
   }
 }
 
 @media screen and (max-width: 800px)  { 
-  header img.brand  {
+  header .brand  {
     position: static;
     left: auto;
     width: 100%;
@@ -150,7 +149,7 @@ header img.brand {
 }
 
 @media screen and (max-width: 560px)  { 
-  header img.brand {
+  header .brand {
     padding: 0 60px;
     margin: 15px 0;
   }
@@ -163,8 +162,8 @@ header img.brand {
 }
 
 .user__btn {
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   border: none;
   background-color: transparent;
   background-size: 100%;
@@ -172,22 +171,22 @@ header img.brand {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 600px)  { 
+@media screen and (max-width: 1025px)  { 
   .user__btn {
-    width: 23px;
-    height: 23px;
+    width: 24px;
+    height: 24px;
   }
 }
 
 .btn--account {
-  margin-right: 15px;
+  margin-right: 16px;
   background-image: url(user.svg);
 
 }
 
 @media screen and (max-width: 1025px)  { 
   .btn--account {
-    margin-right: 7px;
+    margin-right: 12px;
   }
 }
 
@@ -228,33 +227,23 @@ header img.brand {
 .user input.search {
   width: 100%;
   height: 100%;
-  padding-left: 190px;
+  padding: 0 40px 0 15px;
   background-image: url(search.svg);
-  background-size: 20px;
+  background-size: 22px;
   background-position: 98% 50%;
   background-repeat: no-repeat;
   border: 1px solid transparent;
-}
-
-.user input.search {
-  padding-left: 30px;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 1025px) {
   .user input.search {
-    background-size: 22px;
+    background-size: 25px;
   }
 }
 
 @media screen and (max-width: 1025px) {
-  .user input.search {
-    background-size: 23px;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  .search-bar,
-  .search--web {
+  .search-bar {
     display: none;
   }
 }
@@ -266,27 +255,32 @@ header img.brand {
 } 
 
 input[type="search"].search--mob {
-  position: relative;
   width: 0px;
+  height: 24px;
   padding-right: 12px;
-  margin-right: 7px;
+  margin-right: 12px;
   background-color: transparent;
   background-position: 101% 50%;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  transition: width .4s ease-in;
 }
 
-input[type="search"].search--mob::-webkit-search-cancel-button {
-  /* Remove default */
+input.search--web::-webkit-search-cancel-button,
+input.search--mob::-webkit-search-cancel-button  {
   -webkit-appearance: none;
-  /*Your new styles */
-  padding: 0 4px;
+  padding: 0 4px 0 0px;
+
+  margin-left: 5px;
   height: 10px;
   width: 10px;
   background-image: url(delete.svg);
   background-repeat: no-repeat;
+}
+
+input.search--web::-webkit-search-cancel-button {
+  margin-right: -10px;
 }
 
 .search--mob:focus:hover {
@@ -306,7 +300,7 @@ input[type="search"].search--mob::-webkit-search-cancel-button {
   }
 }
 
-.search-dropdown {
+/* .search-dropdown {
   position: absolute;
   width: 170px;
   max-width: 170px;
@@ -364,4 +358,4 @@ input[type="search"].search--mob::-webkit-search-cancel-button {
   width: 1px;
   height: 24px;
   background-color: var(--c-black30);
-}
+} */
