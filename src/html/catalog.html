@@ -185,25 +185,35 @@
           </label>
         </div>
         <div class="filters__item select">
-          <select class="filter-select" name="filter-select" id="">
-            <option value="value1">Значение 1</option>
-            <option value="value2">Значение 2</option>
-            <option value="value3">Значение 3</option>
+          <select id="year" class="select-hidden">
+            <option value="hide">-- Year --</option>
+            <option value="2010">Option 1</option>
+            <option value="2011">Option 2 </option>
+            <option value="2012">Option 3</option>
+            <option value="2013">Option 4</option>
           </select>
+          <div class="select--styled">Filter</div>
+          <ul class="select__options" style="display: none;">
+            <li rel="hide">-- Year --</li>
+            <li rel="2010">Option 1</li>
+            <li rel="2011">Option 2</li>
+            <li rel="2012">Option 3</li>
+            <li rel="2013">Option 4</li>
+          </ul>
         </div>
       </div>
       <div class="display-settings__view-settings">
-        <button class="btn btn--icon-gray">
+        <button class="btn btn--icon-gray" id="view-grid">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93026 1.33301 2.66664V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66664C14.6663 1.93026 14.0694 1.33331 13.333 1.33331Z"
               stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M1.33301 8H14.6663" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1.33301 8H14.6663" stroke-linecap="round" stroke-linejoin="roiund" />
             <path d="M8 1.33331V14.6666" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           Grid view
         </button>
-        <button class="btn btn--icon-gray">
+        <button class="btn btn--icon-gray" id="view-list">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93026 1.33301 2.66664V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66664C14.6663 1.93026 14.0694 1.33331 13.333 1.33331Z"
