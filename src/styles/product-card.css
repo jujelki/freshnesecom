@@ -125,13 +125,24 @@
   object-fit: cover;
 }
 
-.products--full .product__title {
+.product__title {
+  display: inline;
+}
+
+.products--full .product__title h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.products--compact .product__title {
+.products--full .product__title:hover h4,
+.products--full .product__title:active h4,
+.products--compact .product__title:hover h4,
+.products--compact .product__title:active h4 {
+  color: var(--c-copper20);
+} 
+
+.products--compact .product__title h4 { 
   font-size: 15px;
   font-weight: 500;
 }
