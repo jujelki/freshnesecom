@@ -548,7 +548,13 @@ ul.breadcrumbs li+li:before {
 
 .menu__item {
   position: relative;
-  padding: 15px 20px;
+  padding: 15px 25px;
+}
+
+@media screen and (max-width: 1110px)  { 
+  .menu__item  {
+    padding: 15px 13px;
+  }
 }
 
 @media screen and (max-width: 1025px)  { 
@@ -562,8 +568,8 @@ ul.breadcrumbs li+li:before {
 }
 
 .menu__chevron {
-  position: absolute;
-  content: '';
+  display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 20px;
   background-image: url(shevron-down.svg);
@@ -628,8 +634,8 @@ ul.breadcrumbs li+li:before {
 
 @media screen and (min-width: 1025px) {
   .nested-menu {
-  margin-left: -20px;
-  background-color: var(--c-black60);
+    margin-left: -25px;
+    background-color: var(--c-black60);
   }
 } 
 
