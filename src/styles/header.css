@@ -208,9 +208,16 @@ header .brand {
 }
 
 /*search input*/
+.search-bar,
+.search-bar--mob {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 42px;
+}
+
 .search-bar {
   width: 450px;
-  height: 42px;
   border-radius: 12px;
   border: 1px solid var(--c-black30);
 }
@@ -223,14 +230,24 @@ header .brand {
   }
 } 
 
+.search-bar svg,
+.search-bar--mob svg {
+  position: absolute;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  stroke: var(--c-primary);
+}
+
+.search-bar--mob:hover svg {
+  stroke: var(--c-secondary);
+}
+
 .search-bar input.search,
-.user input.search {
+.search-bar--mob input.search {
   width: 100%;
   height: 100%;
   padding: 0 40px 0 15px;
-  background-image: url(search.svg);
-  background-size: 22px;
-  background-position: 98% 50%;
   background-repeat: no-repeat;
   border: 1px solid transparent;
   vertical-align: middle;
@@ -249,53 +266,49 @@ header .brand {
 }
 
 @media screen and (min-width: 1025px) {
-  .search--mob {
+  .search-bar--mob {
     display: none;
   }
 } 
 
 input[type="search"].search--mob {
-  width: 0px;
+  width: 10px;
   height: 24px;
-  padding-right: 12px;
+  padding-right: 24px;
   margin-right: 12px;
   background-color: transparent;
-  background-position: 101% 50%;
   border: none;
   border-radius: 0;
   box-shadow: none;
   transition: width .4s ease-in;
+  z-index: 4;
 }
 
 input.search--web::-webkit-search-cancel-button,
 input.search--mob::-webkit-search-cancel-button  {
   -webkit-appearance: none;
-  padding: 0 4px 0 0px;
-
+  padding: 0 1px 0 0px;
   margin-left: 5px;
-  height: 10px;
-  width: 10px;
+  margin-right: -2px;
+  height: 12px;
+  width: 12px;
   background-image: url(delete.svg);
   background-repeat: no-repeat;
 }
 
-input.search--web::-webkit-search-cancel-button {
-  margin-right: -10px;
-}
-
-.search--mob:focus:hover {
+input[type="search"].search--mob:focus {
   border-bottom: 1px solid var(--c-primary);
   outline: none;
 }
 
 @media screen and (max-width: 1025px) {
-  .search--mob:focus:hover {
+  input[type="search"].search--mob:focus{
     width: 200px;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .search--mob:focus:hover {
+  input[type="search"].search--mob:focus {
     width: 170px;
   }
 }
