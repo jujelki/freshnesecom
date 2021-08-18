@@ -565,7 +565,7 @@ ul.breadcrumbs li+li:before {
 
 @media screen and (max-width: 1110px)  { 
   .menu__item  {
-    padding: 15px 13px;
+    padding: 15px 10px;
   }
 }
 
