@@ -127,9 +127,13 @@
 }
 
 header .brand {
-  object-fit: contain;
-  width: 175px;
+  width: 180px;
 }
+
+header .brand img {
+  object-fit: fill;
+}
+
 
 @media screen and (max-width: 1025px)  { 
   header .brand {
