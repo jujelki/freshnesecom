@@ -166,15 +166,33 @@ header .brand {
   height: 23px;
   border: none;
   background-color: transparent;
-  background-size: 100%;
-  background-position: 50%;
-  background-repeat: no-repeat;
 }
+
+.user__btn svg {
+  width: 23px;
+  height: 23px;
+  stroke: var(--c-primary);
+}
+
+.user__btn:hover svg {
+  stroke: var(--c-secondary);
+}
+
+.user__btn:active svg {
+  stroke: var(--c-copper20);
+}
+
 
 @media screen and (max-width: 1025px)  { 
   .user__btn {
-    width: 24px;
+    width: 25px;
     height: 24px;
+  }
+
+  .user__btn svg {
+    width: 25px;
+    height: 25px;
+    stroke: var(--c-primary);
   }
 }
 
@@ -197,10 +215,11 @@ header .brand {
 
 .btn--basket span {
   position: absolute;
-  top: 12px;
+  top: 55%;
+  right: 0px;
   text-align: center;
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   font-size: 10px;
   background-color: var(--c-copper20);
