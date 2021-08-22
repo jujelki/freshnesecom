@@ -100,12 +100,14 @@
 } 
 
 
-.burger-menu:hover .burger::after {
+.burger-menu:hover .burger::after,
+.burger-menu:active .burger::after {
   top: 11px;
   transform: rotate(135deg);
 }
 
-.burger-menu:hover .burger::before {
+.burger-menu:hover .burger::before,
+.burger-menu:active .burger::after {
   top: 11px;
   transform: rotate(45deg);
 }
