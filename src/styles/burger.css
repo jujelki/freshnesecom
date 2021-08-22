@@ -1,0 +1,111 @@
+@media screen and (min-width: 1026px) {
+  .burger-menu,
+  .burger {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .burger, 
+  .burger-menu {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .burger-menu {
+    transform: rotate(-180deg);
+    transition: all .5s ease;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .burger {
+    -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -webkit-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out; 
+   -moz-transition-timing-function: cubic-bezier(0.61, 0.04, 0.17, 1.32);
+   -o-transition-timing-function: cubic-bezier(0.61, 0.04, 0.17, 1.32);
+   -webkit-transition-timing-function: cubic-bezier(0.61, 0.04, 0.17, 1.32);
+   transition-timing-function: cubic-bezier(0.61, 0.04, 0.17, 1.32);
+  }
+
+  .burger__middle {
+    display: inline-block;
+    position: absolute;
+    background: var(--c-secondary);
+    width: 24px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 0px;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.burger::before,
+.burger::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: var(--c-secondary);  
+}
+
+.burger::before {
+  top: 0px;
+}
+
+.burger::after {
+  bottom: 0px;
+}
+
+.burger-menu--open {
+  transform: rotate(180deg);
+  transition: all .5s ease;
+}
+
+.burger-menu:hover .burger__middle,
+.burger-menu:active .burger__middle {
+  opacity: 0;;
+}
+
+.burger-menu:hover .burger,
+.burger-menu:active .burger {
+  -moz-transform: rotateZ(360deg);
+  -ms-transform: rotateZ(360deg);
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+.burger-menu:hover .burger::after,
+.burger-menu:hover .burger::before,
+.burger-menu:active .burger::after,
+.burger-menu:active .burger::before {
+  background-color: var(--c-copper20);
+  -moz-transform-origin: 50% 50% 0;
+  -webkit-transform-origin: 50% 50% 0;
+  transform-origin: 50% 50% 0;
+  -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+} 
+
+
+.burger-menu:hover .burger::after {
+  top: 11px;
+  transform: rotate(135deg);
+}
+
+.burger-menu:hover .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+}
