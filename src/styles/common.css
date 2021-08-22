@@ -570,7 +570,12 @@ ul.breadcrumbs li+li:before {
 
 @media screen and (max-width: 1110px)  { 
   .menu__item  {
-    padding: 15px 10px;
+    padding: 15px 15px;
+  }
+
+  .menu__item.is-open {
+    color: var(--c-secondary);
+    padding: 15px 15px 0 15px;
   }
 }
 
@@ -578,10 +583,6 @@ ul.breadcrumbs li+li:before {
   .menu__item  {
     cursor: pointer;
   }
-}
-
-.menu__item--is-open {
-  padding-bottom: 0;
 }
 
 .menu__chevron {
@@ -598,6 +599,12 @@ ul.breadcrumbs li+li:before {
 
 @media screen and (min-width: 1025px)  { 
   .menu__item:hover .menu__chevron {
+    transform: rotateX(180deg);
+  }
+}
+
+@media screen and (max-width: 1025px)  { 
+  .is-open .menu__chevron {
     transform: rotateX(180deg);
   }
 }
@@ -659,9 +666,7 @@ ul.breadcrumbs li+li:before {
 @media screen and (max-width: 1025px) {
   .nested-menu {
     position: relative;
-    top: 10px;
-    margin: 0 -20px;
-    padding-bottom: 10px;
+    margin: 15px -15px 0 -15px;
   }
 }
 
@@ -691,7 +696,7 @@ ul.breadcrumbs li+li:before {
 }
 
 @media screen and (max-width: 1025px) {
-    .nested-menu--active {
+  .is-open .nested-menu {
     display: block;
   }
 }

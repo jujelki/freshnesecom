@@ -66,66 +66,6 @@
   }
 }
 
-@media screen and (min-width: 1026px) {
-  .burger-menu,
-  .burger {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  .burger-menu {
-    display: block;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    transform: rotate(-180deg);
-    transition: all .5s ease;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  .burger {
-    position: absolute;
-    background: var(--c-secondary);
-    width: 24px;
-    height: 2px;
-    top: 50%;
-    right: 0px;
-  }
-
-  .burger::before,
-  .burger::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 24px;
-    height: 2px;
-    background: var(--c-secondary);  
-  }
-
-  .burger::before {
-    top: 7px;
-  }
-
-  .burger::after {
-    bottom: 7px;
-  }
-
-  .burger-menu--open {
-    transform: rotate(180deg);
-    transition: all .5s ease;
-  }
-}
-
-.burger-menu--open .burger,
-.burger-menu--open .burger::after,
-.burger-menu--open .burger::before {
-  background-color: green;
-}
-
 header .brand {
   width: 180px;
 }
